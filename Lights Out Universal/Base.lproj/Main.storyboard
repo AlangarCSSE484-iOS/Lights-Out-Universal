@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,254 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lights_Out_Universal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z2K-QX-p9d">
+                                <rect key="frame" x="0.0" y="692" width="414" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="gUq-aP-eJk"/>
+                                    <barButtonItem title="New Game" id="0AB-77-TYU">
+                                        <connections>
+                                            <action selector="pressedNewGame:" destination="BYZ-38-t0r" id="Ej1-aq-KBF"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c4N-Xp-L1q">
+                                <rect key="frame" x="0.0" y="20" width="768" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="lmZ-JL-m0A"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Title" id="8DK-jq-D3c">
+                                        <barButtonItem key="leftBarButtonItem" title="New Game" id="DdL-sb-N5o">
+                                            <connections>
+                                                <action selector="pressedNewGame:" destination="BYZ-38-t0r" id="qpd-PS-xec"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="lmZ-JL-m0A"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="lmZ-JL-m0A"/>
+                                    </mask>
+                                </variation>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gaD-Mm-gXm" userLabel="UsableArea">
+                                <rect key="frame" x="0.0" y="74" width="768" height="950"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pnz-lY-x4u" userLabel="GameBoard">
+                                        <rect key="frame" x="134.5" y="125" width="500" height="700"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M74-Ml-wGd">
+                                                <rect key="frame" x="50" y="120" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" backgroundImage="light_off"/>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJo-rP-FYQ">
+                                                <rect key="frame" x="50" y="240" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" backgroundImage="light_off"/>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0a8-Kq-0jk">
+                                                <rect key="frame" x="50" y="360" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" backgroundImage="light_off"/>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Po7-Rg-P0L">
+                                                <rect key="frame" x="50" y="0.0" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" backgroundImage="light_off"/>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vE8-dr-HAP">
+                                                <rect key="frame" x="185" y="0.0" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" backgroundImage="light_off"/>
+                                            </button>
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tn8-b6-ncb">
+                                                <rect key="frame" x="310" y="304" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" backgroundImage="light_off"/>
+                                            </button>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UwD-Fj-Lna">
+                                                <rect key="frame" x="310" y="56" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" backgroundImage="light_off"/>
+                                            </button>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GNc-YR-XyS">
+                                                <rect key="frame" x="370" y="180" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" backgroundImage="light_off"/>
+                                            </button>
+                                            <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y0K-UQ-ADg">
+                                                <rect key="frame" x="270" y="480" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" backgroundImage="light_off"/>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crP-WS-6O4">
+                                                <rect key="frame" x="50" y="480" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" backgroundImage="light_off"/>
+                                            </button>
+                                            <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRM-gA-RTT">
+                                                <rect key="frame" x="190" y="360" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" backgroundImage="light_off"/>
+                                            </button>
+                                            <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w9r-Ki-txn">
+                                                <rect key="frame" x="350" y="600" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" backgroundImage="light_off"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uX2-uD-IYx">
+                                                <rect key="frame" x="50" y="600" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" backgroundImage="light_off"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="0.52120530610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="0hq-L3-eha"/>
+                                            <constraint firstAttribute="width" constant="500" id="XaF-C0-vr9"/>
+                                            <constraint firstAttribute="height" constant="700" id="rLM-HY-Fjb"/>
+                                            <constraint firstAttribute="height" constant="380" id="ufv-Fp-tUk"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="0hq-L3-eha"/>
+                                                <exclude reference="XaF-C0-vr9"/>
+                                                <exclude reference="rLM-HY-Fjb"/>
+                                                <exclude reference="ufv-Fp-tUk"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="0hq-L3-eha"/>
+                                                <include reference="ufv-Fp-tUk"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=regular">
+                                            <mask key="constraints">
+                                                <include reference="XaF-C0-vr9"/>
+                                                <include reference="rLM-HY-Fjb"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="em6-Mo-jdd">
+                                        <rect key="frame" x="10" y="113" width="394" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="pnz-lY-x4u" firstAttribute="centerY" secondItem="gaD-Mm-gXm" secondAttribute="centerY" id="INB-6A-GTu"/>
+                                    <constraint firstAttribute="trailing" secondItem="em6-Mo-jdd" secondAttribute="trailing" constant="10" id="TQp-gk-ytE"/>
+                                    <constraint firstItem="pnz-lY-x4u" firstAttribute="top" secondItem="em6-Mo-jdd" secondAttribute="bottom" constant="12" id="VSf-yD-PAL"/>
+                                    <constraint firstItem="em6-Mo-jdd" firstAttribute="leading" secondItem="gaD-Mm-gXm" secondAttribute="leading" constant="10" id="bSs-sh-GeW"/>
+                                    <constraint firstItem="pnz-lY-x4u" firstAttribute="centerX" secondItem="gaD-Mm-gXm" secondAttribute="centerX" id="wEp-n5-Wj8"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="em6-Mo-jdd"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="VSf-yD-PAL"/>
+                                        <exclude reference="TQp-gk-ytE"/>
+                                        <exclude reference="bSs-sh-GeW"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="em6-Mo-jdd"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="VSf-yD-PAL"/>
+                                        <include reference="TQp-gk-ytE"/>
+                                        <include reference="bSs-sh-GeW"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gaD-Mm-gXm" secondAttribute="trailing" id="4AW-ud-RS1"/>
+                            <constraint firstItem="c4N-Xp-L1q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="C1G-zU-2kQ"/>
+                            <constraint firstItem="z2K-QX-p9d" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="H1Z-eg-CJe"/>
+                            <constraint firstAttribute="bottom" secondItem="z2K-QX-p9d" secondAttribute="bottom" id="H7I-fd-Q4x"/>
+                            <constraint firstItem="gaD-Mm-gXm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Icy-DF-If9"/>
+                            <constraint firstItem="gaD-Mm-gXm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="OaI-dG-TBY"/>
+                            <constraint firstItem="c4N-Xp-L1q" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="TGp-qA-82C"/>
+                            <constraint firstAttribute="trailing" secondItem="z2K-QX-p9d" secondAttribute="trailing" id="UMb-Mc-Dg2"/>
+                            <constraint firstItem="c4N-Xp-L1q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="UdV-hb-TF6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gaD-Mm-gXm" secondAttribute="bottom" id="gXi-LC-UOF"/>
+                            <constraint firstItem="z2K-QX-p9d" firstAttribute="top" secondItem="gaD-Mm-gXm" secondAttribute="bottom" id="q9T-Ij-yct"/>
+                            <constraint firstItem="gaD-Mm-gXm" firstAttribute="top" secondItem="c4N-Xp-L1q" secondAttribute="bottom" id="z2e-s0-EnV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="z2K-QX-p9d"/>
+                                <exclude reference="c4N-Xp-L1q"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="C1G-zU-2kQ"/>
+                                <exclude reference="TGp-qA-82C"/>
+                                <exclude reference="UdV-hb-TF6"/>
+                                <exclude reference="gXi-LC-UOF"/>
+                                <exclude reference="OaI-dG-TBY"/>
+                                <exclude reference="z2e-s0-EnV"/>
+                                <exclude reference="H1Z-eg-CJe"/>
+                                <exclude reference="H7I-fd-Q4x"/>
+                                <exclude reference="UMb-Mc-Dg2"/>
+                                <exclude reference="q9T-Ij-yct"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="z2K-QX-p9d"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="OaI-dG-TBY"/>
+                                <include reference="H1Z-eg-CJe"/>
+                                <include reference="H7I-fd-Q4x"/>
+                                <include reference="UMb-Mc-Dg2"/>
+                                <include reference="q9T-Ij-yct"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="c4N-Xp-L1q"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="C1G-zU-2kQ"/>
+                                <include reference="TGp-qA-82C"/>
+                                <include reference="UdV-hb-TF6"/>
+                                <include reference="gXi-LC-UOF"/>
+                                <include reference="z2e-s0-EnV"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="gameStateLabel" destination="em6-Mo-jdd" id="vK0-BI-Yyc"/>
+                        <outlet property="gameStateNavBar" destination="c4N-Xp-L1q" id="79g-RK-ZBn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="116" y="117.39130434782609"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="light_off" width="100" height="100"/>
+    </resources>
 </document>

@@ -10,10 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet weak var gameStateLabel: UILabel!
+    @IBOutlet weak var gameStateNavBar: UINavigationBar!
+    
+    @IBAction func pressedNewGame(_ sender: Any) {
+        print("You pressed new game!")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        gameStateNavBar.titleTextAttributes = [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 20)]
     }
+        
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

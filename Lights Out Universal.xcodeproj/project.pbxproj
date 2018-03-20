@@ -12,6 +12,16 @@
 		0A0C869E205AFCC900BAC1DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A0C869C205AFCC900BAC1DC /* Main.storyboard */; };
 		0A0C86A0205AFCC900BAC1DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A0C869F205AFCC900BAC1DC /* Assets.xcassets */; };
 		0A0C86A3205AFCC900BAC1DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A0C86A1205AFCC900BAC1DC /* LaunchScreen.storyboard */; };
+		0A0C86C8206097D400BAC1DC /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A0C86C0206097D400BAC1DC /* Icon-72.png */; };
+		0A0C86C9206097D400BAC1DC /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A0C86C1206097D400BAC1DC /* Icon-60.png */; };
+		0A0C86CA206097D400BAC1DC /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A0C86C2206097D400BAC1DC /* Icon.png */; };
+		0A0C86CB206097D400BAC1DC /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A0C86C3206097D400BAC1DC /* Icon-Small-50@2x.png */; };
+		0A0C86CC206097D400BAC1DC /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A0C86C4206097D400BAC1DC /* Icon-Small-50.png */; };
+		0A0C86CD206097D400BAC1DC /* iconBig.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A0C86C5206097D400BAC1DC /* iconBig.png */; };
+		0A0C86CE206097D400BAC1DC /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A0C86C6206097D400BAC1DC /* Icon-72@2x.png */; };
+		0A0C86CF206097D400BAC1DC /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A0C86C7206097D400BAC1DC /* Icon@2x.png */; };
+		0A0C86D52060B18000BAC1DC /* Lights Out Universal in Resources */ = {isa = PBXBuildFile; fileRef = 0A0C86D42060B18000BAC1DC /* Lights Out Universal */; };
+		0A0C86D72060B1A300BAC1DC /* LightsOutGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0C86D62060B1A300BAC1DC /* LightsOutGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +32,16 @@
 		0A0C869F205AFCC900BAC1DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A0C86A2205AFCC900BAC1DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A0C86A4205AFCC900BAC1DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A0C86C0206097D400BAC1DC /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		0A0C86C1206097D400BAC1DC /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60.png"; sourceTree = "<group>"; };
+		0A0C86C2206097D400BAC1DC /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		0A0C86C3206097D400BAC1DC /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		0A0C86C4206097D400BAC1DC /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		0A0C86C5206097D400BAC1DC /* iconBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconBig.png; sourceTree = "<group>"; };
+		0A0C86C6206097D400BAC1DC /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		0A0C86C7206097D400BAC1DC /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		0A0C86D42060B18000BAC1DC /* Lights Out Universal */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Lights Out Universal"; sourceTree = "<group>"; };
+		0A0C86D62060B1A300BAC1DC /* LightsOutGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightsOutGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +74,32 @@
 		0A0C8697205AFCC900BAC1DC /* Lights Out Universal */ = {
 			isa = PBXGroup;
 			children = (
+				0A0C86D42060B18000BAC1DC /* Lights Out Universal */,
+				0A0C86BF2060977D00BAC1DC /* Supporting */,
 				0A0C8698205AFCC900BAC1DC /* AppDelegate.swift */,
 				0A0C869A205AFCC900BAC1DC /* ViewController.swift */,
 				0A0C869C205AFCC900BAC1DC /* Main.storyboard */,
 				0A0C869F205AFCC900BAC1DC /* Assets.xcassets */,
 				0A0C86A1205AFCC900BAC1DC /* LaunchScreen.storyboard */,
 				0A0C86A4205AFCC900BAC1DC /* Info.plist */,
+				0A0C86D62060B1A300BAC1DC /* LightsOutGame.swift */,
 			);
 			path = "Lights Out Universal";
+			sourceTree = "<group>";
+		};
+		0A0C86BF2060977D00BAC1DC /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				0A0C86C1206097D400BAC1DC /* Icon-60.png */,
+				0A0C86C0206097D400BAC1DC /* Icon-72.png */,
+				0A0C86C6206097D400BAC1DC /* Icon-72@2x.png */,
+				0A0C86C4206097D400BAC1DC /* Icon-Small-50.png */,
+				0A0C86C3206097D400BAC1DC /* Icon-Small-50@2x.png */,
+				0A0C86C2206097D400BAC1DC /* Icon.png */,
+				0A0C86C7206097D400BAC1DC /* Icon@2x.png */,
+				0A0C86C5206097D400BAC1DC /* iconBig.png */,
+			);
+			path = Supporting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,7 +161,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A0C86CA206097D400BAC1DC /* Icon.png in Resources */,
+				0A0C86C9206097D400BAC1DC /* Icon-60.png in Resources */,
+				0A0C86CE206097D400BAC1DC /* Icon-72@2x.png in Resources */,
+				0A0C86CB206097D400BAC1DC /* Icon-Small-50@2x.png in Resources */,
 				0A0C86A3205AFCC900BAC1DC /* LaunchScreen.storyboard in Resources */,
+				0A0C86CF206097D400BAC1DC /* Icon@2x.png in Resources */,
+				0A0C86CD206097D400BAC1DC /* iconBig.png in Resources */,
+				0A0C86C8206097D400BAC1DC /* Icon-72.png in Resources */,
+				0A0C86D52060B18000BAC1DC /* Lights Out Universal in Resources */,
+				0A0C86CC206097D400BAC1DC /* Icon-Small-50.png in Resources */,
 				0A0C86A0205AFCC900BAC1DC /* Assets.xcassets in Resources */,
 				0A0C869E205AFCC900BAC1DC /* Main.storyboard in Resources */,
 			);
@@ -137,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A0C869B205AFCC900BAC1DC /* ViewController.swift in Sources */,
+				0A0C86D72060B1A300BAC1DC /* LightsOutGame.swift in Sources */,
 				0A0C8699205AFCC900BAC1DC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
