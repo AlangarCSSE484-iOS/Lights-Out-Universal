@@ -20,7 +20,6 @@
 		0A0C86CD206097D400BAC1DC /* iconBig.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A0C86C5206097D400BAC1DC /* iconBig.png */; };
 		0A0C86CE206097D400BAC1DC /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A0C86C6206097D400BAC1DC /* Icon-72@2x.png */; };
 		0A0C86CF206097D400BAC1DC /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A0C86C7206097D400BAC1DC /* Icon@2x.png */; };
-		0A0C86D52060B18000BAC1DC /* Lights Out Universal in Resources */ = {isa = PBXBuildFile; fileRef = 0A0C86D42060B18000BAC1DC /* Lights Out Universal */; };
 		0A0C86D72060B1A300BAC1DC /* LightsOutGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0C86D62060B1A300BAC1DC /* LightsOutGame.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +39,6 @@
 		0A0C86C5206097D400BAC1DC /* iconBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconBig.png; sourceTree = "<group>"; };
 		0A0C86C6206097D400BAC1DC /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
 		0A0C86C7206097D400BAC1DC /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
-		0A0C86D42060B18000BAC1DC /* Lights Out Universal */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Lights Out Universal"; sourceTree = "<group>"; };
 		0A0C86D62060B1A300BAC1DC /* LightsOutGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightsOutGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,7 +72,6 @@
 		0A0C8697205AFCC900BAC1DC /* Lights Out Universal */ = {
 			isa = PBXGroup;
 			children = (
-				0A0C86D42060B18000BAC1DC /* Lights Out Universal */,
 				0A0C86BF2060977D00BAC1DC /* Supporting */,
 				0A0C8698205AFCC900BAC1DC /* AppDelegate.swift */,
 				0A0C869A205AFCC900BAC1DC /* ViewController.swift */,
@@ -169,7 +166,6 @@
 				0A0C86CF206097D400BAC1DC /* Icon@2x.png in Resources */,
 				0A0C86CD206097D400BAC1DC /* iconBig.png in Resources */,
 				0A0C86C8206097D400BAC1DC /* Icon-72.png in Resources */,
-				0A0C86D52060B18000BAC1DC /* Lights Out Universal in Resources */,
 				0A0C86CC206097D400BAC1DC /* Icon-Small-50.png in Resources */,
 				0A0C86A0205AFCC900BAC1DC /* Assets.xcassets in Resources */,
 				0A0C869E205AFCC900BAC1DC /* Main.storyboard in Resources */,
