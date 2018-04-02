@@ -14,12 +14,12 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var gameStateLabel: UILabel!
     @IBOutlet weak var gameStateNavBar: UINavigationBar!
-    var game = LinearLightsOutGame(numLights: 13)
+    var game = LightsOutGame(numLights: 13)
     var onLight = #imageLiteral(resourceName: "light_on")
     var offLight = #imageLiteral(resourceName: "light_off")
     
     @IBAction func pressedNewGame(_ sender: Any) {
-        game = LinearLightsOutGame(numLights: 13)
+        game = LightsOutGame(numLights: 13)
         updateView()
     }
     
