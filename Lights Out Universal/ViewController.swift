@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     var offLight = #imageLiteral(resourceName: "light_off")
     
     @IBAction func pressedNewGame(_ sender: Any) {
-        print("You pressed new game!")
+        game = LinearLightsOutGame(numLights: 13)
         updateView()
     }
     
@@ -32,9 +32,9 @@ class ViewController: UIViewController {
     
     @IBAction func gameButtonPressed(_ sender: Any) {
         let gameBoardButtons = sender as! UIButton
-        print(gameBoardButtons.tag)
         game.pressedLightAtIndex(gameBoardButtons.tag)
         updateView()
+        
     }
     
     
