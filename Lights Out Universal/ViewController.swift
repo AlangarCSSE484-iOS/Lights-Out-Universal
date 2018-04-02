@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         gameStateNavBar.titleTextAttributes = [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 20)]
-        //updateView()
+        updateView()
         
     }
     
@@ -39,6 +39,11 @@ class ViewController: UIViewController {
     
     
     func updateView() {
+        if (game.checkForWin()){
+            gameStateLabel.text = "You won in \(game.moves) moves!"
+        } else {
+            gameStateLabel.text = "You have made \(game.moves) moves."
+        }
         for i in 0..<13 {
             let button = gameBoardButtons[i]
             if (game.lightStates[i]){

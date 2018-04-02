@@ -60,7 +60,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pnz-lY-x4u" userLabel="GameBoard">
                                         <rect key="frame" x="82.666666666666686" y="146" width="250" height="380"/>
                                         <subviews>
-                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M74-Ml-wGd">
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M74-Ml-wGd">
                                                 <rect key="frame" x="25" y="80" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="7fg-9W-zKZ"/>
@@ -93,7 +93,7 @@
                                                     <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sJ5-jh-Xry"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJo-rP-FYQ">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJo-rP-FYQ">
                                                 <rect key="frame" x="25" y="140" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="C30-e3-dea"/>
@@ -126,7 +126,7 @@
                                                     <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iYj-YG-3C6"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0a8-Kq-0jk">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0a8-Kq-0jk">
                                                 <rect key="frame" x="25" y="200" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="RHb-z2-w3E"/>
@@ -159,7 +159,7 @@
                                                     <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ylf-GE-PUl"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Po7-Rg-P0L">
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Po7-Rg-P0L">
                                                 <rect key="frame" x="25" y="20" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="FQ7-ii-TxX"/>
@@ -192,7 +192,7 @@
                                                     <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mgw-3u-81b"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vE8-dr-HAP">
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vE8-dr-HAP">
                                                 <rect key="frame" x="94.999999999999986" y="20" width="50.000000000000014" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="5p7-bx-JOC"/>
@@ -225,7 +225,7 @@
                                                     <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="McZ-Zg-EV8"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tn8-b6-ncb">
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tn8-b6-ncb">
                                                 <rect key="frame" x="155" y="172" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="6tz-am-9TI"/>
@@ -258,7 +258,7 @@
                                                     <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rok-Ep-1f5"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UwD-Fj-Lna">
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UwD-Fj-Lna">
                                                 <rect key="frame" x="155" y="48" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="03W-x2-qSN"/>
@@ -291,7 +291,7 @@
                                                     <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4aH-0a-Wjg"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GNc-YR-XyS">
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GNc-YR-XyS">
                                                 <rect key="frame" x="182" y="110" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="Fvu-Gd-bHs"/>
@@ -324,7 +324,7 @@
                                                     <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="brH-yQ-2xg"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y0K-UQ-ADg">
+                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y0K-UQ-ADg">
                                                 <rect key="frame" x="135" y="260" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="363-wT-Hkd"/>
@@ -357,7 +357,7 @@
                                                     <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q73-M1-9p6"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crP-WS-6O4">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crP-WS-6O4">
                                                 <rect key="frame" x="25" y="260" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="3dK-bp-Dn4"/>
@@ -390,7 +390,7 @@
                                                     <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="chQ-3T-D2m"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRM-gA-RTT">
+                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRM-gA-RTT">
                                                 <rect key="frame" x="94.999999999999986" y="200" width="50.000000000000014" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="DzP-Cn-S2y"/>
@@ -423,7 +423,7 @@
                                                     <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RGj-Nb-bun"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w9r-Ki-txn">
+                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w9r-Ki-txn">
                                                 <rect key="frame" x="175" y="320" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="Af2-3S-5Jf"/>
@@ -456,7 +456,7 @@
                                                     <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fiH-20-Qfj"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uX2-uD-IYx">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uX2-uD-IYx">
                                                 <rect key="frame" x="25" y="320" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="2BJ-rS-22v"/>
@@ -688,13 +688,13 @@
                                 <exclude reference="C1G-zU-2kQ"/>
                                 <exclude reference="TGp-qA-82C"/>
                                 <exclude reference="UdV-hb-TF6"/>
+                                <exclude reference="gXi-LC-UOF"/>
+                                <exclude reference="OaI-dG-TBY"/>
+                                <exclude reference="z2e-s0-EnV"/>
                                 <exclude reference="H1Z-eg-CJe"/>
                                 <exclude reference="H7I-fd-Q4x"/>
                                 <exclude reference="UMb-Mc-Dg2"/>
                                 <exclude reference="q9T-Ij-yct"/>
-                                <exclude reference="gXi-LC-UOF"/>
-                                <exclude reference="OaI-dG-TBY"/>
-                                <exclude reference="z2e-s0-EnV"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -702,11 +702,11 @@
                                 <include reference="z2K-QX-p9d"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="OaI-dG-TBY"/>
                                 <include reference="H1Z-eg-CJe"/>
                                 <include reference="H7I-fd-Q4x"/>
                                 <include reference="UMb-Mc-Dg2"/>
                                 <include reference="q9T-Ij-yct"/>
-                                <include reference="OaI-dG-TBY"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=regular">
