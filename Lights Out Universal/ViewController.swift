@@ -19,26 +19,32 @@ class ViewController: UIViewController {
     var offLight = #imageLiteral(resourceName: "light_off")
     
     @IBAction func pressedNewGame(_ sender: Any) {
-        print("You pressed new game!")
+        game = LinearLightsOutGame(numLights: 13)
         updateView()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         gameStateNavBar.titleTextAttributes = [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 20)]
-        //updateView()
+        updateView()
         
     }
     
     @IBAction func gameButtonPressed(_ sender: Any) {
         let gameBoardButtons = sender as! UIButton
-        print(gameBoardButtons.tag)
         game.pressedLightAtIndex(gameBoardButtons.tag)
         updateView()
+        
     }
     
     
     func updateView() {
+        if (game.checkForWin()) {
+            gameStateLabel.text = "You won in \(game.moves) moves!"
+        }
+        else {
+            gameStateLabel.text = "You have made \(game.moves) moves."
+        }
         for i in 0..<13 {
             let button = gameBoardButtons[i]
             if (game.lightStates[i]){
