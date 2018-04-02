@@ -14,12 +14,14 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var gameStateLabel: UILabel!
     @IBOutlet weak var gameStateNavBar: UINavigationBar!
-    var game = LightsOutGame(numLights: 13)
+   // var game = LightsOutGame(numLights: 13)
+    var game = LightsOutGame.init(numLights: 13)
     var onLight = #imageLiteral(resourceName: "light_on")
     var offLight = #imageLiteral(resourceName: "light_off")
     
     @IBAction func pressedNewGame(_ sender: Any) {
-        game = LightsOutGame(numLights: 13)
+      //  game = LightsOutGame(numLights: 13)
+        game = LightsOutGame.init(numLights: 13)
         updateView()
     }
     
@@ -32,21 +34,21 @@ class ViewController: UIViewController {
     
     @IBAction func gameButtonPressed(_ sender: Any) {
         let gameBoardButtons = sender as! UIButton
-        game.pressedLightAtIndex(gameBoardButtons.tag)
+        game!.pressedLight(at: gameBoardButtons.tag)
         updateView()
         
     }
     
     
     func updateView() {
-        if (game.checkForWin()){
-            gameStateLabel.text = "You won in \(game.moves) moves!"
+        if (game!.checkForWin()){
+            gameStateLabel.text = "You won in \(game!.movesTaken) moves!"
         } else {
-            gameStateLabel.text = "You have made \(game.moves) moves."
+            gameStateLabel.text = "You have made \(game!.movesTaken) moves."
         }
         for i in 0..<13 {
             let button = gameBoardButtons[i]
-            if (game.lightStates[i]){
+            if (game!.isLightOn(at: i)){
                 button.setImage(onLight, for: UIControlState.normal)
             } else {
                 button.setImage(offLight, for: UIControlState.normal)

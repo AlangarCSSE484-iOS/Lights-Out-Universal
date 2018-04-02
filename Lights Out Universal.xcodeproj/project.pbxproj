@@ -20,7 +20,6 @@
 		0A0C86CD206097D400BAC1DC /* iconBig.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A0C86C5206097D400BAC1DC /* iconBig.png */; };
 		0A0C86CE206097D400BAC1DC /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A0C86C6206097D400BAC1DC /* Icon-72@2x.png */; };
 		0A0C86CF206097D400BAC1DC /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A0C86C7206097D400BAC1DC /* Icon@2x.png */; };
-		0A0C86D72060B1A300BAC1DC /* LightsOutGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0C86D62060B1A300BAC1DC /* LightsOutGame.swift */; };
 		0A33F7F62071D2A100D36061 /* LightsOutGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A33F7F52071D2A100D36061 /* LightsOutGame.m */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +39,6 @@
 		0A0C86C5206097D400BAC1DC /* iconBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconBig.png; sourceTree = "<group>"; };
 		0A0C86C6206097D400BAC1DC /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
 		0A0C86C7206097D400BAC1DC /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
-		0A0C86D62060B1A300BAC1DC /* LightsOutGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightsOutGame.swift; sourceTree = "<group>"; };
 		0A33F7F32071D2A000D36061 /* Lights Out Universal-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lights Out Universal-Bridging-Header.h"; sourceTree = "<group>"; };
 		0A33F7F42071D2A100D36061 /* LightsOutGame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LightsOutGame.h; sourceTree = "<group>"; };
 		0A33F7F52071D2A100D36061 /* LightsOutGame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LightsOutGame.m; sourceTree = "<group>"; };
@@ -83,7 +81,6 @@
 				0A0C869F205AFCC900BAC1DC /* Assets.xcassets */,
 				0A0C86A1205AFCC900BAC1DC /* LaunchScreen.storyboard */,
 				0A0C86A4205AFCC900BAC1DC /* Info.plist */,
-				0A0C86D62060B1A300BAC1DC /* LightsOutGame.swift */,
 				0A33F7F42071D2A100D36061 /* LightsOutGame.h */,
 				0A33F7F52071D2A100D36061 /* LightsOutGame.m */,
 				0A33F7F32071D2A000D36061 /* Lights Out Universal-Bridging-Header.h */,
@@ -188,7 +185,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A0C869B205AFCC900BAC1DC /* ViewController.swift in Sources */,
-				0A0C86D72060B1A300BAC1DC /* LightsOutGame.swift in Sources */,
 				0A0C8699205AFCC900BAC1DC /* AppDelegate.swift in Sources */,
 				0A33F7F62071D2A100D36061 /* LightsOutGame.m in Sources */,
 			);
